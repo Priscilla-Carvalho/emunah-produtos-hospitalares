@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo de equipamentos hospitalares para compra e locação da Emunah em Belo Horizonte.">
+  <meta name="theme-color" content="#087fa5">
+  <title>Catálogo de equipamentos | Emunah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/favicon-emunah.png?v=4">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png?v=4">
+</head>
+<body class="catalog-page">
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/><path d="M4.5 12h4l1.5-3 3 7 1.5-4h5"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path style="fill:currentColor;stroke:none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.148-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.208-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.647-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 7.021 2.91 9.825 9.825 0 0 1 2.9 7.024c-.003 5.45-4.437 9.884-9.925 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <div class="topbar">
+    <div class="container topbar__inner"><span>Atendimento 24 horas</span><span>Belo Horizonte e região</span><a href="tel:+5531984213500">(31) 98421-3500</a></div>
+  </div>
+  <header class="catalog-header">
+    <div class="container catalog-nav">
+      <a class="brand brand--official" href="../" aria-label="Voltar para Emunah"><img class="brand__logo" src="../assets/emunah-logo-nova.png" alt="Emunah Equipamentos Hospitalares"></a>
+      <a class="catalog-back" href="../">← Voltar ao site</a>
+      <button class="selection-trigger" type="button" aria-controls="selection-panel"><svg><use href="#i-bag"/></svg> Minha seleção <span id="selection-count">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog-hero">
+      <div class="container">
+        <span class="kicker">Catálogo Emunah</span>
+        <h1>Escolha o equipamento ideal</h1>
+        <p>Veja os modelos, selecione os itens de interesse e envie tudo pelo WhatsApp para consultar valores, disponibilidade e entrega.</p>
+        <div class="catalog-notice"><strong>Importante:</strong> modelos, cores e características podem variar conforme a disponibilidade.</div>
+      </div>
+    </section>
+
+    <section class="catalog-content">
+      <div class="container">
+        <div class="catalog-toolbar" aria-label="Filtrar produtos">
+          <button type="button" data-filter="todos" class="is-active">Todos</button>
+          <button type="button" data-filter="camas">Camas e transferência</button>
+          <button type="button" data-filter="cadeiras-rodas">Cadeiras de rodas</button>
+          <button type="button" data-filter="banho">Banho e higiene</button>
+          <button type="button" data-filter="mobilidade">Mobilidade</button>
+          <button type="button" data-filter="colchoes">Colchões</button>
+          <button type="button" data-filter="acessorios">Medidores e acessórios</button>
+        </div>
+        <div class="catalog-results"><span id="results-label">20 produtos</span><small>Valores de aluguel por 30 dias nos itens disponíveis.</small></div>
+        <div class="catalog-grid" id="catalog-grid"></div>
+        <div class="catalog-empty" id="catalog-empty" hidden>Nenhum produto encontrado nesta categoria.</div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="product-dialog" id="product-dialog">
+    <button class="dialog-close" type="button" data-close-dialog aria-label="Fechar"><svg><use href="#i-close"/></svg></button>
+    <div class="product-dialog__layout">
+      <div class="product-dialog__image"><img id="dialog-image" alt=""></div>
+      <div class="product-dialog__content">
+        <span class="product-meta" id="dialog-category"></span>
+        <h2 id="dialog-name"></h2>
+        <p id="dialog-description"></p>
+        <div class="dialog-prices" id="dialog-prices"></div>
+        <div class="detail-points" id="dialog-specifications"></div>
+        <div class="dialog-actions">
+          <button class="button button--primary" id="dialog-add" type="button">Adicionar à seleção</button>
+          <a class="button button--whatsapp" id="dialog-whatsapp" href="#"><svg><use href="#i-whatsapp"/></svg> Consultar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <aside class="selection-panel" id="selection-panel" aria-hidden="true">
+    <div class="selection-panel__header"><div><span>Sua lista</span><h2>Minha seleção</h2></div><button type="button" data-close-selection aria-label="Fechar"><svg><use href="#i-close"/></svg></button></div>
+    <div class="selection-list" id="selection-list"></div>
+    <div class="selection-empty" id="selection-empty">Você ainda não selecionou nenhum produto.</div>
+    <a class="button button--whatsapp selection-finish" id="selection-finish" href="#"><svg><use href="#i-whatsapp"/></svg> Enviar seleção pelo WhatsApp</a>
+  </aside>
+  <div class="selection-overlay" data-close-selection></div>
+
+  <a class="floating-whatsapp" id="catalog-whatsapp" href="https://api.whatsapp.com/send?phone=5531984213500" aria-label="Falar com a Emunah pelo WhatsApp"><svg><use href="#i-whatsapp"/></svg><span>WhatsApp</span></a>
+  <script src="../catalogo.js"></script>
+</body>
+</html>
